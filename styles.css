@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background: #2c303d;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+h1{
+    margin-bottom: 20px;
+    
+}
+
+.dado{
+    background: #27bcd1;
+    display: flex;
+    min-width: 80px;
+    min-height: 80px;
+    justify-content: center;
+    align-items: center;
+    cursor:default;
+    border-radius: 6px;
+
+}
+
+.numero{
+    height: 100%;
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+.botonTirar{
+    margin-top:20px;
+}
+
+.animDado{
+    animation: girar 1s linear infinite;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+    }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.botonTirar {
+  margin-top: 20px;
+  background-color: #20b264;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.botonTirar:hover {
+  background-color: #1c9d58;
+}
+
+.botonTirar:active {
+  transform: scale(0.96);
+}
