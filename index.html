@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MisLibros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Libros </h1>
+        <p>Para cuando no sepas q leer</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>¿de que tienes ganas?</h2>
+
+            <div>
+<button onclick="mostrarLibros('Para sentir')">Para sentir</button>
+
+<button onclick="mostrarLibros('Para entender el mundo')">
+    Para entender el mundo
+</button>
+
+<button onclick="mostrarLibros('Historias reales fuertes')">
+    Historias reales fuertes
+</button>
+
+<button onclick="mostrarLibros('Para aprender')">
+    Para aprender
+</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Mis recomendaciones...</h2>
+
+            <div id="libros-container">
+                
+            </div>
+        </section>
+        <script src="script.js"></script>
+
+    </main>
+
+</body>
+</html>
