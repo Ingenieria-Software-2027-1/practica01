@@ -1,0 +1,96 @@
+body
+{
+  background-image: url("../assets/Ankh.png");
+}
+
+a
+{
+  color: inherit;
+}
+
+a:hover
+{
+  color: blue;
+}
+
+.contenedorcent
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo
+{
+  font-size: xx-large;
+  text-align: center;
+  border: 2px solid white;
+  padding: 10px;
+  background-color: #FFFFFF50;
+}
+
+.barra
+{
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: x-large;
+  width: 95%;
+
+  border: 2px solid white;
+  padding: 10px;
+  background-color: #FFFFFF50;
+}
+
+.elembarra
+{
+  margin: 5px;
+  border: 2px solid white;
+  padding-left: 4%;
+  padding-right: 4%;
+  background-color: #FFFFFF50;
+}
+
+.contenedorimgs
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 3%;
+}
+
+.imgfondo
+{
+  width: 28vw;
+  margin: 10px;
+}
+
+.imgfondo img
+{
+  width: 100%;
+}
+
+.links
+{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.25rem 2rem;
+
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+
+  border: 2px solid white;
+  padding: 10px;
+  background-color: #FFFFFF50;
+}
+
+.links a
+{
+  text-align: right;
+}
