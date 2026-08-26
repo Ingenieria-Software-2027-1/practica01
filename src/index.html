@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Ha⋅gi</title>
+  </head>
+  <body>
+    <header
+      class="flex flex-row justify-between items-center border-b-2 border-primary pb-4 mb-4"
+    >
+      <h1 class="text-3xl font-bold flex items-center gap-2">
+        하기 <span class="text-primary text-lg font-normal">/ha⋅gi/</span>
+      </h1>
+      <div class="text-sm text-muted font-medium">
+        Aprende
+        <samp id="hangul-hover" class="font-bold text-dark">hangul</samp> fácil
+        <span class="text-primary">( • ⩊ • )</span>
+      </div>
+    </header>
+
+    <main class="flex flex-col gap-6">
+      <article class="card">
+        <h2
+          class="text-xl font-semibold text-secondary mb-3 flex items-center justify-between"
+        >
+          ¿Qué es el hangul (한글)?
+          <span class="text-muted text-sm font-normal">(⊙.⊙)</span>
+        </h2>
+        <p class="text-muted leading-relaxed">
+          <strong class="text-dark">Hangul</strong>, hangeul o
+          <span class="font-medium text-primary">한글</span> es el sistema de
+          escritura coreano. A diferencia de otros idiomas asiáticos como el
+          chino o japonés, en coreano solo existe un sistema de escritura y es
+          <strong>fonético</strong> (como el español o inglés).
+        </p>
+      </article>
+
+      <article class="card">
+        <h2
+          class="text-xl font-semibold text-secondary mb-3 flex items-center justify-between"
+        >
+          ¿Es fácil?
+          <span class="text-muted text-sm font-normal">(-_-;)</span>
+        </h2>
+        <p class="text-muted leading-relaxed">
+          ¡Sí! Al ser fonético, está construido a partir de caracteres que
+          representan sonidos. Una persona promedio puede empezar a leer sus
+          primeras sílabas en solo unos minutos.
+        </p>
+      </article>
+
+      <div class="flex flex-col items-center justify-center">
+        <span class="text-xl">¿Listo para aprender hangul?</span>
+        <button
+          id="start-game-btn"
+          class="decorations-none bg-primary px-4 py-2 mt-2 text-white font-semibold rounded-md"
+        >
+          Empezar (시작하다)
+        </button>
+      </div>
+
+      <section id="game-section" class="card hidden">
+        <div class="flex items-center justify-between mb-2">
+          <h2 class="text-xl font-semibold text-secondary">Juego: Romanización → Hangul</h2>
+          <span id="game-progress" class="text-sm text-muted">Pregunta 0/0</span>
+        </div>
+
+        <p class="text-muted mb-2">
+          Escribe la sílaba en <strong class="text-dark">hangul</strong> que corresponde a la romanización.
+        </p>
+
+        <div class="game-prompt mb-2">
+          <span class="text-sm text-muted">Romanización</span>
+          <p id="game-romanization" class="text-3xl font-bold text-dark">-</p>
+        </div>
+
+        <form id="game-form" class="flex flex-col gap-2" autocomplete="off">
+          <label for="game-answer" class="text-sm text-muted">Tu respuesta</label>
+          <input
+            id="game-answer"
+            type="text"
+            maxlength="2"
+            class="game-input"
+            placeholder="Ej: 가"
+            required
+          />
+          <div class="flex gap-2">
+            <button type="submit" class="decorations-none bg-secondary px-4 py-2 text-white font-semibold rounded-md">
+              Comprobar
+            </button>
+            <button id="game-next-btn" type="button" class="decorations-none bg-primary px-4 py-2 text-white font-semibold rounded-md hidden">
+              Siguiente
+            </button>
+          </div>
+        </form>
+
+        <p id="game-feedback" class="text-sm text-muted mt-2">Pulsa "Empezar" para iniciar.</p>
+
+        <div class="flex items-center justify-between mt-2">
+          <p id="game-score" class="text-md font-semibold text-dark">Puntos: 0</p>
+          <button id="game-restart-btn" type="button" class="decorations-none bg-light px-4 py-2 text-dark font-semibold rounded-md hidden">
+            Jugar otra vez
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <samp>
+        Hecho con 사랑 ❤️ en México por Ulises Viña (<a href="https://github.com/ulisesvina">@ulisesvina</a>)
+      </samp>
+    </footer>
+  </body>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100vh;
+    }
+  </style>
+  <script defer src="./scripts/animations.js"></script>
+  <script defer src="./scripts/main.js"></script>
+</html>
